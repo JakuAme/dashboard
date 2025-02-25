@@ -1,11 +1,17 @@
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx}"
+    "./src/**/*.{js,ts,jsx,tsx}"
   ],
-  darkMode: "class", // 🔥 ATTIVIAMO IL TEMA SCURO
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gray: {
+          950: '#1a1a1a', // Definizione personalizzata per gray-950
+        },
+      },
+    },
   },
   plugins: [],
 };
