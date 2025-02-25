@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Assicura che il tema scuro sia attivo */
+@layer base {
+  body {
+    @apply bg-gray-950 text-white;
+  }
+}
