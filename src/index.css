@@ -1,10 +1,20 @@
 @tailwind base;
+
+@custom-variant dark (&:is(.dark *));
 @tailwind components;
 @tailwind utilities;
 
-/* Assicura che il tema scuro sia attivo */
 @layer base {
   body {
     @apply bg-gray-950 text-white;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
